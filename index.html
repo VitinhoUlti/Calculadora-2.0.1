@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculadora">
+        <div id="titulo">
+            <h1>Calculadora</h1>
+        </div>
+        <div id="tela">
+            <p id="paulo">0</p>
+        </div>
+        <div id="numeros">
+            
+                <div id="apague1" class="numeral" onclick="div2()">%</div>
+                <div id="apague2" class="numeral" onclick="apag1()">C</div>
+                <div id="apague3" class="numeral" onclick="apag2()">APAGAR</div>
+                
+                <div id="divisão" class="numeral">/</div>
+                <div id="a7" class="numeral" onclick="sete()">7</div>
+                <div id="a8" class="numeral" onclick="oito()">8</div>
+                <div id="a9" class="numeral" onclick="nove()">9</div>
+                
+                <div id="vezes" class="numeral">*</div>
+                <div id="a4" class="numeral" onclick="quatro()">4</div>
+                <div id="a5" class="numeral" onclick="cinco()">5</div>
+                <div id="a6" class="numeral" onclick="seis()">6</div>
+                
+                <div id="menos" class="numeral">-</div>
+                <div id="a1" class="numeral" onclick="um()">1</div>
+                <div id="a2" class="numeral" onclick="dois()">2</div>
+                <div id="a3" class="numeral" onclick="tres()">3</div>
+
+                <div id="mais" class="numeral" onclick="mais()">+</div>
+                <div id="a0" class="numeral" onclick="zero()">0</div>
+                <div id="igual" class="numeral" onclick="igual()">=</div>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    background-color: rgb(192, 189, 189);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+#calculadora{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "tela"
+    "numeros"
+    ;
+    justify-content: center;
+    text-align: center;
+    width: 60vw;
+    height: 80vw;
+    background-color: black;
+    border: 3px solid gray;
+}
+#titulo{
+    grid-area: titulo;
+    color: white;
+    font-size: 2.5vw;
+}
+#tela{
+    grid-area: tela;
+    text-align: end;
+    background-color: white;
+    width: 55vw;
+    height: 5vw;
+    border: 3px solid gray;
+    font-size: 4vw;
+}
+#numeros{
+    grid-area: numeros;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 55vw;
+    height: 55vw;
+    background-color: gray;
+    border: 3px solid gray;
+}
+.numeral{
+    cursor: pointer;
+    font-size: 2.8vw;
+    width: 12vw;
+    margin-left: 1vw;
+    height: 10vw;
+    border: 1px solid black;
+    background-color: white;
+}
+.numeral:hover{
+    background-color: aquamarine;
+}
+.numeral:active{
+    background-color: aqua;
+}
+#igual{
+    flex-grow: 1;
+}
