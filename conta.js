@@ -2,7 +2,7 @@ let tela = document.getElementById("paulo")
 let numeros = [];
 let num2 = [];
 let t = 0;
-let numerov = Number(numeros.value);
+let numerov = Number(numeros);
 
 function zero(){
     
@@ -116,8 +116,10 @@ function igual(){
     igualmais();
 }
 function igualmais(){
-    let numerof = Number(numeros[0].value);
-    let num2v = Number(numeros[0].value)
+    let numerof = Number(numeros[0]);
+    let num2v = Number(numeros[0])
+    let res = numerof+num2v
+    tela.textContent = res
     if(t=1){
         tela.textContent = numerof
     }
