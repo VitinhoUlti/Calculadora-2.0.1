@@ -98,13 +98,19 @@ function vezes(){
     separ = 3;
     selec = 2;
     tela.textContent = numeros;
-    tela.textContent += '-';
+    tela.textContent += 'X';
 }
 function div1(){
     separ = 4;
     selec = 2;
     tela.textContent = numeros;
-    tela.textContent += '-';
+    tela.textContent += '/';
+}
+function div2(){
+    separ = 5;
+    selec = 2;
+    tela.textContent = numeros;
+    tela.textContent += '%';
 }
 function apag1(){
     numeros = '';
@@ -124,6 +130,12 @@ function igual(){
         igualmais();
     }else if(separ==2){
         igualmenos();
+    }else if(separ==3){
+        igualvezes();
+    }else if(separ==4){
+        igualdivi();
+    }else if(separ==5){
+        igualdivi2();
     }
 }
 function igualmais(){
@@ -138,6 +150,30 @@ function igualmenos(){
     let numerov = Number(numeros);
     let num2v = Number(num2);
     let res2 = numerov - num2v;
+    tela.textContent = res2;
+    numeros = res2
+    num2 = ''
+}
+function igualvezes(){
+    let numerov = Number(numeros);
+    let num2v = Number(num2);
+    let res2 = numerov * num2v;
+    tela.textContent = res2;
+    numeros = res2
+    num2 = ''
+}
+function igualdivi(){
+    let numerov = Number(numeros);
+    let num2v = Number(num2);
+    let res2 = numerov / num2v;
+    tela.textContent = res2;
+    numeros = res2
+    num2 = ''
+}
+function igualdivi2(){
+    let numerov = Number(numeros);
+    let num2v = Number(num2);
+    let res2 = numerov % num2v;
     tela.textContent = res2;
     numeros = res2
     num2 = ''
